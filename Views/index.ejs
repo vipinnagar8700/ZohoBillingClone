@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCavenue Payment</title>
+</head>
+<body>
+
+    <h1>CCavenue Payment Form</h1>
+
+    <form action="http://localhost:3000/api/ccavenue" method="post">
+        <!-- Add your input fields for user information here -->
+        <label for="order_id">Order ID:</label>
+        <input type="text" id="order_id" name="order_id" value="UNIQUE_ORDER_ID" required>
+
+        <label for="amount">Amount (INR):</label>
+        <input type="text" id="amount" name="amount" value="AMOUNT_IN_INR" required>
+
+        <!-- Add other input fields as needed -->
+
+        <input type="submit" value="Proceed to Payment">
+    </form>
+
+</body>
+</html>
